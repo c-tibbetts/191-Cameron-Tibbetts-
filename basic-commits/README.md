@@ -13,19 +13,99 @@ You can look at the bottom of this file, if you have not yet done basic git conf
 
 1. Use `git status` to see which branch you are on.
 2. What does `git log` look like?
+Cameron@DESKTOP-BMLINED MINGW64 ~/Desktop/191-Cameron-Tibbetts-/basic-commits/exercise (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+
 3. Create a file
 4. What does the output from `git status` look like now?
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   newfile
+
+
 5. `add` the file to the staging area
 6. How does `git status` look now?
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   newfile
+
+
 7. `commit` the file to the repository
 8. How does `git status` look now?
+Cameron@DESKTOP-BMLINED MINGW64 ~/Desktop/191-Cameron-Tibbetts-/basic-commits/exercise (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+
 9. Change the content of the file you created earlier
 10. What does `git status` look like now?
+Cameron@DESKTOP-BMLINED MINGW64 ~/Desktop/191-Cameron-Tibbetts-/basic-commits/exercise (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   newfile
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
 11. `add` the file change
 12. What does `git status` look like now?
+Cameron@DESKTOP-BMLINED MINGW64 ~/Desktop/191-Cameron-Tibbetts-/basic-commits/exercise (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   newfile
+
+
 13. Change the file again
 14. Make a `commit`
 15. What does the `status` look like now? The `log`?
+Cameron@DESKTOP-BMLINED MINGW64 ~/Desktop/191-Cameron-Tibbetts-/basic-commits/exercise (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   newfile
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+Cameron@DESKTOP-BMLINED MINGW64 ~/Desktop/191-Cameron-Tibbetts-/basic-commits/exercise (master)
+$ git log
+commit d48aeafd1cd7b38c083a6ad07dd0aade92bb2f79 (HEAD -> master)
+Author: Cameron Tibbetts <ctibbett@uci.edu>
+Date:   Fri Jan 24 20:50:45 2020 -0800
+
+    changed newfile
+
+commit eb96bf852bc54b98507ae68a033740342093b89b
+Author: Cameron Tibbetts <ctibbett@uci.edu>
+Date:   Fri Jan 24 20:46:34 2020 -0800
+
+    added newfile
+
+    
 16. Commit the newest change
 
 ## Useful commands
