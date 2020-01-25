@@ -15,6 +15,15 @@ You again live in your own branch, this time we will be doing a bit of juggling 
 6. Create a file README.md with information about this repository
 7. Add the README.md file to staging area and make the commit
 8. What is the output of `git log --oneline --graph --all`?
+Cameron@DESKTOP-BMLINED MINGW64 ~/git-katas/3-way-merge/exercise (master)
+$ git log --oneline --graph --all
+* 4470db4 (HEAD -> master) created README
+| * 30d9f33 (greeting) changed greeting in greeting.txt
+|/
+* 263afda Add content to greeting.txt
+* cb112aa Add file greeting.txt
+
+
 9. Diff the branches
 10. Merge the greeting branch into master
 
